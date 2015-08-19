@@ -5,7 +5,6 @@ Prerequisites:
 	 1)Pyhton
 	 2)Python-Twitter
     		You can install python-twitter easily by using
-    		
     		$pip install twitter
     		
 	3)Twitter API credentials 
