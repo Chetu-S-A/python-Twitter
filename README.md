@@ -2,13 +2,13 @@ python-Twitter
 This is a simple script using twitter API. 
 
 Prerequisites:
-	 1)Pyhton \n
-	 2)Python-Twitter \n
-    		You can install python-twitter easily by using \n
+	 1)Pyhton
+	 2)Python-Twitter
+    		You can install python-twitter easily by using
     		
-    		$pip install twitter \n
+    		$pip install twitter
     		
-	3)Twitter API credentials \n
-		You need to get them from twitter developer site. \n
+	3)Twitter API credentials 
+		You need to get them from twitter developer site.
 Usage:
 	$python python-twitter.py
