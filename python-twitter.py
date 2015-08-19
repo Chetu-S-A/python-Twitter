@@ -38,9 +38,7 @@ consumer_key1 = raw_input("Enter your Consumer key\n")
 consumer_secret1 = raw_input("Enter your consumer secret key\n")
 access_token1 = raw_input('Enter your access token\n')
 access_secret1 = raw_input("Enter your access token secret\n")
-
-api=twitter.Api(consumer_key='QZDlTXagVfnXM1m8trXC8aBTk',consumer_secret='icHF606n4lsdhwdz0FpMnA3ZOhLZdNrdVGkysSpRvi86MqnQvt',access_token_key='81535299-nNx215oRI9OMWUEyd7JGCQfuulikKxAvgXT3YX9el',access_token_secret='djNPQTLrMMrndtpVZRXnSiIhZyXB4BtHijnzYaEDjrbpZ')
-#api = twitter.Api(consumer_key = consumer_key1, consumer_secret= consumer_secret1, access_token_key = access_token1, access_token_secret= access_secret1)
+api = twitter.Api(consumer_key = consumer_key1, consumer_secret= consumer_secret1, access_token_key = access_token1, access_token_secret= access_secret1)
 handle = raw_input("Enter you're twitter handle (without'@')\n")
 option = input("Enter your task\n 1> Fetch tweers \n 2> Fetch followers 3> tweet \n ");
 if (option == 1):
