@@ -1,7 +1,7 @@
 import twitter
 def fetch_tweets(handle,num):
 	statuses = api.GetUserTimeline(screen_name=handle)
-	#print [s.text for s in statuses]
+	print [s.text for s in statuses]
 	tweet_file=open('tweets.db','w')
 	for i in range(num):
 		tweet_file.write(statuses[i].text.encode('utf-8')+"\n\n")
@@ -18,8 +18,8 @@ def tweet_it():
 	from time import sleep
 	choice=raw_input("Do you want to tweet from a file?y/n")
 	if choice=='y':
-		t=input("Enter the time gap bwtween your tweets (in seconds)\n")
-		f=raw_input("Enter the file name (make sure it's in the same ditectory as this script)")
+		t=input("Enter the time gap between your tweets (in seconds)\n")
+		f=raw_input("Enter the file name (make sure it's in the same directory as this script)")
 		g=open(f,'r')
 		for i in g:
 			api.PostUpdates(i)
@@ -42,7 +42,7 @@ api = twitter.Api(consumer_key = consumer_key1, consumer_secret= consumer_secret
 handle = raw_input("Enter you're twitter handle (without'@')\n")
 option = input("Enter your task\n 1> Fetch tweers \n 2> Fetch followers 3> tweet \n ");
 if (option == 1):
-	num = input("Enter the nm of tweets\n")
+	num = input("Enter the number of tweets\n")
 	print 'Tweets are logged in tweets.db'
 	fetch_tweets(handle,num)
 elif (option == 2):
